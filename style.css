@@ -1,0 +1,221 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #74638f;
+}
+::-webkit-scrollbar:horizontal {
+    height: 5px;
+    background-color: #74638f;
+}
+html {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+}
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+section {
+    background: #fff;
+}
+#header-img {
+    width: 35px;
+}
+#nav-bar {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+#nav-bar ul a {
+    padding: 0 10px;
+    font-weight: 600;
+    color: black;
+}
+#nav-bar ul {
+    display: flex;
+}
+#header {
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-image {
+    width: 500px;
+}
+.head-section {
+    height: 100vh;
+    background: #fff7eb !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.head-section div h1:nth-child(1) {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.head-section div h1:nth-child(2) {
+    margin-block-start: 0em;
+}
+.head-section div h1 {
+    font-size: 4rem;
+}
+.head-section div button {
+    border: 1px solid #3333;
+    border-radius: 50px;
+    padding: 0.9rem;
+    min-width: 9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    outline: none;
+}
+.head-section div button:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+.head-section div button:active {
+    transition: all 0.01s;
+    transform: translateY(-3px);
+}
+.head-section div button:nth-child(2) {
+    background-color: #fff0dc;
+    margin-left: 1.4rem;
+}
+.head-section div button:nth-child(1) {
+    background-color: #ffffff;
+}
+#showcase img {
+    width: 20rem;
+}
+#showcase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem 0;
+}
+#showcase h1 {
+    font-size: 3rem;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+#showcase div {
+    max-width: 40rem;
+}
+#user-review {
+    text-align: center;
+    padding: 10rem 0;
+    background-color: #fff7eb;
+}
+#user-review h1 {
+    font-size: 2rem;
+}
+#user-review div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#join {
+    text-align: center;
+    padding: 10rem 0;
+}
+#join form input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 30rem;
+    transition: all 0.1s;
+    outline: none;
+    border: 2px solid rgb(224, 224, 224);
+    font-size: 1.2rem;
+}
+#join form input[type="email"]:focus {
+    box-shadow: 0 0px 2px 2px rgba(17, 224, 224, 0.4);
+    border: 2px solid rgb(17, 224, 224);
+}
+#join form input[type="submit"] {
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: none;
+    background: gold;
+    cursor: pointer;
+}
+#mode {
+    border: none;
+    padding: 0.5rem;
+    color: #fff;
+    background: #000000;
+}
+footer {
+    padding: 10rem 0;
+    text-align: center;
+    background-color: #fff7eb;
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 1500px) {
+    iframe {
+        margin: 2rem 0;
+    }
+}
+@media (max-width: 1080px) {
+    iframe {
+        margin: 1.3rem 0;
+    }
+    #user-review {
+        padding: 5rem;
+    }
+    .head-section {
+        padding-top: 2rem;
+        flex-direction: column-reverse;
+    }
+    .head-section {
+        text-align: center;
+    }
+    #showcase {
+        margin: 0 1rem;
+    }
+    #showcase > div {
+        margin-left: 2.3rem;
+    }
+}
+@media (max-width: 800px) {
+    #header > section > div:nth-child(1) > h1 {
+        font-size: 2.8rem;
+    }
+    #showcase > div {
+        margin-left: 0;
+        padding-top: 2rem;
+    }
+    #showcase > div > h1 {
+        font-size: 2.5rem;
+    }
+    #showcase {
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 0;
+    }
+}
+@media (max-width: 650px) {
+    #join form input[type="email"] {
+        width: unset;
+        min-width: 6rem;
+    }
+}
